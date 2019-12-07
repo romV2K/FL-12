@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Basics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <div id="main">
+      <div id="container">
+        <div id="content" role="main">
+          <!-- TODO: Content goes here -->
+          <div class="EpamLogo">
+            <img src="logo.png" alt="">
+          </div>
+          <h1>
+            HTML Elements
+          </h1>
+          <hr>
+          <nav class="links">
+            <a href="#">Home</a>
+            <a href="#">Headings</a>
+            <a href="#">Text formats</a>
+            <a href="#">Types of lists</a>
+            <a href="#">Table</a>
+            <a href="#">Blockquotes</a>
+            <a href="#">Registration</a>
+          </nav>
+          <hr>
+            <p>Lorem ipsum dolor sit amet,
+                <a href="#">test link</a> 
+                adipiscing elit.
+                Nullam dignissim convallis est. Quisque aliquam.
+                <i>This is emphasized.</i> 
+                Donec faucibus. Nunc iaculis suscipit dui. 4 <sup>4</sup>  = 256.
+                Water is H<sub>3</sub>PO<sub>4</sub>.br
+                Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
+                <i>Time Magazine</i> 
+                (That’s a citation).
+                <u>Underline.</u> 
+                Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+              <b>I am strong.</b> 
+            </p> 
+            <p>
+                Watch out for the abbreviations!
+                <abbr title="Hyper Text Markup Language">HTML</abbr>
+                and
+                <abbr title="Cascading Style Sheets">CSS</abbr>
+                are our tools.
+                <abbr title="JavaScript">JS</abbr>                
+                is a dynamically typed language.
+                auris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum. To copy a file type
+                <kbd>COPY</kbd>
+                <i>filename</i>.
+                <del>The meeting began at 7pm</del> 
+                <ins>Let&rsquo;s make that 6.</ins> 
+                This <del>text</del> has been struck.
+            </p>
+          <hr>
+          <div class="text2">
+            <p>
+                h1 defines the most important heading. h6 defines the least important heading. Font-size for h1 is the same as font-size for h2, because we have to use only one h1 on the page, and it is commonly used inside header
+            </p>
+          </div>
+          <div class="headings">
+            <h2>Heading2</h2>
+            <h3>Heading3</h3>
+            <h4>Heading4</h4>
+            <h5>Heading5</h5>
+            <h6>Heading6</h6>
+          </div>
+          <hr>
+          <div class="TextFormats">
+            <h2>Text formats</h2>
+            <h3>Article</h3>
+              <article>
+                <h2>Article title</h2>
+                <h4>Article description</h4>
+              </article>
+            <h3>Preformated text</h3>
+            <pre>
+Text in a <b>pre</b> element
+is displayed in a fixed-width
+font, and it preserves
+both      <b>spaces</b> and
+<b>line breaks</b>
+            </pre>
+            <h3>This is code</h3>
+            <pre>
+              <code>
+.flex {
+  display: flex;
+  justify-content: justify;
+  aliign-items: center;
+}
+              </code>
+            </pre>
+          </div>
+          <div class="WhishList">
+            <h2>Unordered Wish List</h2>
+            <ul>
+              <li>Iphone 11 pro max</li>
+                <li>Books:
+                <ul>
+                <li>Clean code principles javascript</li>
+                <li>You don't know JS</li>
+                <li>Angular Pro</li>
+              </ul>
+              </li>
+              <li>Headphones</li>
+            </ul>
+          </div>
+          <div class="TaskList">
+            <h2>Ordered Task List</h2>
+            <ol>
+              <li>Pay the bills</li>
+              <li>Refuel the car</li>
+              <li>Finish homework
+                <ol>
+                  <li style="list-style: upper-alpha">Create HTML page according to the requirements</li>
+                  <li style="list-style: upper-alpha">Upload to the GitHub repository</li>
+                </ol>
+              </li>
+              <li>Enjoy your day</li>
+            </ol>
+          </div>
+        <div class="defenitionList">
+          <h3>Defenition List</h3>
+          <p><b>HTML</b></p>
+          <p>HTML is the standard markup language to create Web pages.</p>
+          <p><b>CSS</b></p>
+          <p>HTML is the standard markup language to create Web pages.</p>
+          <p><b>JavaScript</b></p>
+          <p>HTML is the standard markup language to create Web pages.</p>
+          Select for learning <select name="select">
+              <option value="red">JS</option>
+              <option value="green">HTML</option>
+              <option value="BLUE">CSS</option>
+          </select>
+        </div>
+        <hr>
+        <hr>
+        <div class="table">
+          <h2>Table</h2>
+          <table>
+              <tr>
+                  <th>Skill</th>
+                  <th>Training</th>
+                  <th>City</th>
+                </tr>
+                <tr>
+                  <td>JAVA</td>
+                  <td>JAVA development training</td>
+                  <td>Lviv</td>
+                </tr>
+                <tr>
+                  <td>JAVASCRIPT</td>
+                  <td>FRONT-END development</td>
+                  <td>Kharkiv</td>
+                </tr>
+                <tr>
+                  <td>IOS</td>
+                  <td>IOS winter 2019</td>
+                  <td>Kyiv</td>
+                </tr>
+                <tr>
+                  <td>DEVOPS</td>
+                  <td>DEVOPS spring 2020</td>
+                  <td>Dnipro</td>
+                </tr>
+          </table>
+        </div>
+        <div class="Backquotes">
+          <p>Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
+          <blockquote>"So if you want to go fast, if you want to get done quickly, if you want your code to be easy to write, make it easy to read."<br>
+            <a href="#">Robert C. Martin (Uncle Bob)</a>
+          </blockquote>
+        </div>
+        <hr>
+        <div class="inputs">
+          <form action="#">
+            <label for="username">Username: </label>
+            <input id="username" type="text"><br>
+            <label for="email">Email: </label>
+            <input id="email" type="text"><br>
+            <label for="password">Password: </label>
+            <input id="password" type="password"><br>
+            <textarea rows="5" cols="23"></textarea><br>
+            <button> Submit</button>
+          </form>
+        </div>
+        <footer>&copy; Copyright Epam Systems</footer>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
