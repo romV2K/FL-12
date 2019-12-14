@@ -1,0 +1,290 @@
+// Write your styles here
+
+@mixin resetStyle {
+     body{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          background-color: $backgroundColor
+     }
+}
+%buttonStyle{
+     background-color: $btnColor;
+     height: 45px;
+     width: 135px;
+     border: 0;
+     border-radius: 2px;
+     font-weight: bold;
+     color: $btnTextColor;
+     font-size: 16px;
+     &:hover{
+     background-color: $btnHoverColor;
+     cursor: pointer;
+     transition: 0.3s;
+     }
+}
+.header{
+     background-image: $headerBackground;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 700px;
+     width: 100%;
+     border-bottom-right-radius: 43vw 43vh;
+}
+@include resetStyle;
+.header-wrap{
+     max-width: 80%;
+     margin: 0 auto;
+     padding-top: 20px;
+     .landing-logo{
+          display: inline;
+          img {
+               float: left;
+               width: 37px;
+               height: auto;
+          }
+          p {
+               font-size: 20px;
+               font-family: map-get($fonts, $fontText);
+               padding-left: 50px;
+               padding-top: 3px;
+               font-weight: bold;
+               line-height: 0.8em;
+               color: $textColor;
+               margin: 0;
+          span {
+               font-size: 9px;
+               width: 60px;
+               margin-left: 2px;
+               display: grid;
+               color: $textColor;
+               }
+          }
+     }
+     .header_heading{
+          font-size: 60px;
+          font-family: $fontSourcePro;
+          font-weight: bold;
+          color: $textColor;
+          max-width: 500px;
+          position: relative;
+          z-index: 2;
+          margin: 50px 0 0 0;
+     }
+     .header_heading::after {
+          content: '';
+          background-color: $underlineTextColor;
+          display: block;
+          height: 60px;
+          width: 50%;
+          z-index: -1;
+          position: absolute; 
+          bottom: 0px;
+     }
+     .header_text{
+          font-family: map-get($fonts, $fontText);
+          line-height: 24px;
+          color: $textColor;
+          white-space: pre-line;
+          margin-top: 30px;
+     }
+          .header_button{
+          @extend %buttonStyle;
+          margin-top: 60px;;
+     }
+     .login{
+          color:$btnTextColor;
+          text-decoration: underline;
+          font-family: map-get($fonts, $fontText);
+          font-weight: bold; 
+          margin-left: 100px; 
+     }
+}
+.section{
+     max-width: 80%;
+     margin: 0 auto;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     .section_text{
+          color: $textColor;
+          font-family: $fontSourcePro;
+          font-size: 40px;
+          text-align: center;
+          font-weight: 600;
+          z-index: 2;
+          position: relative;
+     }
+     .section_text::after {
+          content: '';
+          background-color: #14A0C7;
+          display: block;
+          height: 48px;
+          width: 15.4%;
+          z-index: -1;
+          position: absolute;
+          bottom: 0px;
+          right: 33.7%;
+          top: -10%;
+     }
+     .section_card_wrap{
+          display: flex;
+          justify-content: space-around;
+          flex-direction: column;
+          align-items: center;
+          .section_card{
+               width: 90%;
+               height: 350px;
+               background-color: $footerAndCardBackgroundColor;
+               border-radius: 7px;
+               text-align: center;
+               color: #FFFFFF;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               margin-top: 20px;
+          .section_card_img{
+               width: 100%;
+               height: 90%;
+               margin-left: 10px;
+               border-radius: 7px;
+          }
+          .section_card_heading{
+               font-size: 22px;
+               font-weight: bold;
+               font-family: $fontSourcePro;
+               margin: 12px;
+               margin-bottom: 40px;
+               display: inline-block;
+               z-index: 2;
+          .section_card_underline{
+               background-color: $underlineTextColor;
+               z-index: -1;
+               display: block;
+               height: 10px;
+               margin-top: -12px;
+          }
+          }
+          .section_card_text{
+               margin: 0 auto;
+               width: 87%;
+               font-family: map-get($fonts, $fontText);
+               font-size: 15px;
+               text-align:left;
+               color: $sectionTextColor;
+               margin-bottom: 40px;
+          }
+          .section_link{
+               color:$btnTextColor;
+               text-decoration: underline;
+               font-family: map-get($fonts, $fontText);
+          }
+     }
+}
+.section_banner{
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+     position:  relative;
+     display: flex;
+     background: linear-gradient(to right, $bannerBackgroundColor1, $bannerBackgroundColor2);
+     border-radius: 4px;
+     margin-top:150px;
+}
+.section_banner_text_wrap{
+     padding-left: 70px;
+     margin-left: 10%;
+     z-index: 2;
+     .section_banner_heading{
+          color: $textColor;
+          font-size: 30px;
+          font-weight: bold;
+          font-family: $fontSourcePro;
+          margin-bottom: 0;
+          position: relative;
+          z-index: 2;
+     }
+     .section_banner_heading::after {
+          content: '';
+          background-color: $underlineTextColor;
+          display: block;
+          height: 26px;
+          width: 15.5%;
+          z-index: -1;
+          position: absolute; 
+          bottom: 4px;
+          left: 29.5%;
+     }
+     .section_banner_text{color: #c0c3ce;
+          font-size: 16px;
+          font-family: map-get($fonts, $fontText);
+          margin-bottom: 45px;
+     }
+     }
+     .section_banner_button{
+          @extend %buttonStyle;
+          margin: auto 0;
+          position:relative;
+          left:20%;
+     }
+}
+.footer{
+background-color: $footerAndCardBackgroundColor;
+.footer-wrap{
+     width: 80%;
+     height: 70px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     z-index: -1;
+     margin-top: -75px;
+     padding-top: 120px;
+     padding-bottom: 50px;
+     margin-left: auto;
+     margin-right: auto;
+     max-width: 100%;
+     vertical-align: top;
+          .footer_text{
+               width: 25%;
+               text-align: left;
+               font-size: 14px;
+               font-family: map-get($fonts, $fontText);
+               color:#c0c3ce;
+               margin: auto 0;
+          }
+          .footer_logo{
+               display: inline;
+               margin: auto 0;
+               img {
+               float: left;
+               width: 37px;
+               height: auto;
+          }
+          p {
+               font-size: 22px;
+               font-family: map-get($fonts, $fontText);
+               padding-left: 50px;
+               padding-top: 3px;
+               font-weight: bold;
+               line-height: 0.8em;
+               color: $sectionTextColor;
+               margin: 0;
+               span {
+                    font-size: 10px;
+                    width: 60px;
+                    margin-left: 2px;
+                    display: grid;
+                    color: $sectionTextColor;
+               }
+          }
+     }
+     .footer-cr{
+          font-size: 16px;
+          font-family: map-get($fonts, $fontText);
+          color:#c0c3ce;
+          margin: auto 0;
+     }
+}
+}
+
